@@ -1,0 +1,143 @@
+08-18-2017 @ 10:22:44 - [custom_process_admin_options] - analytics response: {
+    "status": 200,
+    "response": {
+        "checkout_basic": "true",
+        "two_cards": "false",
+        "collector_id": "96499470",
+        "site_id": "MLV",
+        "platform": "WooCommerce",
+        "platform_version": "3.1.2",
+        "module_version": "2.2.12",
+        "code_version": "5.6.31",
+        "so_server": "WINNT"
+    }
+}
+08-18-2017 @ 10:25:59 - [process_payment] - preparing to render Mercado Pago checkout view.
+08-18-2017 @ 10:26:05 - [build_payment_preference] - preference created with following structure: {
+    "items": [
+        {
+            "id": 53,
+            "title": "Camisa Dama x 1",
+            "description": "",
+            "picture_url": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2017\/08\/camisa-dama-azul.jpg",
+            "category_id": "art",
+            "quantity": 1,
+            "unit_price": 80,
+            "currency_id": "VEF"
+        }
+    ],
+    "payer": {
+        "name": "Julio",
+        "surname": "Avila",
+        "email": "javila3090@gmail.com",
+        "phone": {
+            "number": "04243700897"
+        },
+        "address": {
+            "street_name": "Calle el carmen #28 \/ San juan de los morros Guarico VE",
+            "zip_code": "2301"
+        }
+    },
+    "back_urls": {
+        "success": "http:\/\/localhost\/wordpress\/finalizar-comprar\/order-received\/57?key=wc_order_59971513e2241",
+        "failure": "http:\/\/localhost\/wordpress\/carro\/?cancel_order=true&order=wc_order_59971513e2241&order_id=57&redirect&_wpnonce=e670288d98",
+        "pending": "http:\/\/localhost\/wordpress\/finalizar-comprar\/order-received\/57?key=wc_order_59971513e2241"
+    },
+    "shipments": {
+        "receiver_address": {
+            "zip_code": "",
+            "street_name": "   ",
+            "apartment": ""
+        }
+    },
+    "payment_methods": {
+        "installments": 24,
+        "default_installments": 1
+    },
+    "external_reference": "WC-57",
+    "sponsor_id": 208692735,
+    "auto_return": "approved"
+}
+08-18-2017 @ 10:26:06 - [create_url] - payment link generated with success from mercado pago, with structure as follow: {
+    "status": 201,
+    "response": {
+        "collector_id": 96499470,
+        "sponsor_id": 208692735,
+        "operation_type": "regular_payment",
+        "items": [
+            {
+                "id": "53",
+                "picture_url": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2017\/08\/camisa-dama-azul.jpg",
+                "title": "Camisa Dama x 1",
+                "description": "",
+                "category_id": "art",
+                "currency_id": "VEF",
+                "quantity": 1,
+                "unit_price": 80
+            }
+        ],
+        "payer": {
+            "name": "Julio",
+            "surname": "Avila",
+            "email": "javila3090@gmail.com",
+            "date_created": "",
+            "phone": {
+                "area_code": "",
+                "number": "04243700897"
+            },
+            "identification": {
+                "type": "",
+                "number": ""
+            },
+            "address": {
+                "street_name": "Calle el carmen #28  San juan de los morros Guarico VE",
+                "street_number": null,
+                "zip_code": "2301"
+            }
+        },
+        "back_urls": {
+            "success": "http:\/\/localhost\/wordpress\/finalizar-comprar\/order-received\/57?key=wc_order_59971513e2241",
+            "pending": "http:\/\/localhost\/wordpress\/finalizar-comprar\/order-received\/57?key=wc_order_59971513e2241",
+            "failure": "http:\/\/localhost\/wordpress\/carro\/?cancel_order=true&order=wc_order_59971513e2241&order_id=57&redirect&_wpnonce=e670288d98"
+        },
+        "auto_return": "approved",
+        "payment_methods": {
+            "excluded_payment_methods": [
+                {
+                    "id": ""
+                }
+            ],
+            "excluded_payment_types": [
+                {
+                    "id": ""
+                }
+            ],
+            "installments": 24,
+            "default_payment_method_id": null,
+            "default_installments": 1
+        },
+        "client_id": "963",
+        "marketplace": "NONE",
+        "marketplace_fee": 0,
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "",
+                "street_number": null,
+                "street_name": "   ",
+                "floor": "",
+                "apartment": ""
+            }
+        },
+        "notification_url": null,
+        "external_reference": "WC-57",
+        "additional_info": "",
+        "expires": false,
+        "expiration_date_from": null,
+        "expiration_date_to": null,
+        "date_created": "2017-08-18T12:26:04.678-04:00",
+        "id": "96499470-36c1e1da-4fa1-442b-9849-a43f1472eb9e",
+        "init_point": "https:\/\/www.mercadopago.com\/mlv\/checkout\/start?pref_id=96499470-36c1e1da-4fa1-442b-9849-a43f1472eb9e",
+        "sandbox_init_point": "https:\/\/sandbox.mercadopago.com\/mlv\/checkout\/pay?pref_id=96499470-36c1e1da-4fa1-442b-9849-a43f1472eb9e"
+    }
+}
+08-18-2017 @ 10:26:06 - [render_order_form] - embedding Mercado Pago iframe.
